@@ -1,0 +1,391 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Brew &amp; Bliss Coffee Shop</title>
+    <meta
+      name="description"
+      content="Brew & Bliss Coffee Shop — handcrafted drinks, fresh pastries, and the perfect cup, every time."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <a href="#top" class="brand" id="top">
+          <span class="brand-mark" aria-hidden="true">☕</span>
+          <span class="brand-name">Brew &amp; Bliss</span>
+        </a>
+        <nav aria-label="Primary">
+          <ul class="nav-list">
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#featured">Featured</a></li>
+            <li><a href="#loyalty">Loyalty &amp; Ordering</a></li>
+            <li><a href="#find-us">Find Us</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="hero-heading">
+        <div class="container">
+          <h1 id="hero-heading">
+            Handcrafted drinks. Fresh pastries. Your perfect cup, every time.
+          </h1>
+          <p class="hero-lead">
+            Welcome to Brew &amp; Bliss — a neighbourhood coffee shop pouring
+            locally sourced beans and rotating seasonal ingredients. From the
+            first slow-brewed filter of the morning to a late-afternoon
+            pastry, we craft every order with care.
+          </p>
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="#menu">See the menu</a>
+            <a class="btn btn-ghost" href="#find-us">Plan your visit</a>
+          </div>
+        </div>
+      </section>
+
+      <!--
+        ===========================================================
+        FEATURED MONTHLY SPECIAL
+        -----------------------------------------------------------
+        The content below is rendered by featured.js from a single
+        config object (window.BREW_AND_BLISS_FEATURED). To change
+        the monthly special, edit featured.js and update the four
+        fields (label, name, price, description). No HTML edits
+        required.
+        ===========================================================
+      -->
+      <section
+        id="featured"
+        class="featured"
+        aria-labelledby="featured-heading"
+      >
+        <div class="container">
+          <div class="featured-card" role="region" aria-live="polite">
+            <span class="badge" data-featured="label">Featured This Month</span>
+            <h2 id="featured-heading" class="featured-title">
+              <span data-featured="name">Lavender Honey Latte</span>
+              <span class="featured-price" data-featured="price">$6.00</span>
+            </h2>
+            <p class="featured-description" data-featured="description">
+              House-made lavender syrup, local wildflower honey, and oat milk
+              over a double shot. Available iced or hot.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="menu" class="menu" aria-labelledby="menu-heading">
+        <div class="container">
+          <header class="section-header">
+            <h2 id="menu-heading">Our Menu</h2>
+            <p>
+              Browse our full menu and pricing. Milk alternatives available
+              where noted; please ask a barista about allergens.
+            </p>
+          </header>
+
+          <div class="menu-grid">
+            <article class="menu-section" aria-labelledby="hot-drinks-heading">
+              <h3 id="hot-drinks-heading" class="menu-section-title">
+                Hot Drinks
+              </h3>
+              <ul class="menu-list">
+                <li class="menu-item">
+                  <div class="menu-item-head">
+                    <span class="menu-item-name">Espresso</span>
+                    <span class="menu-item-price">$3.00</span>
+                  </div>
+                  <p class="menu-item-desc">
+                    A bold, single or double shot of our signature blend.
+                  </p>
+                </li>
+                <li class="menu-item">
+                  <div class="menu-item-head">
+                    <span class="menu-item-name">Cappuccino</span>
+                    <span class="menu-item-price">$4.50</span>
+                  </div>
+                  <p class="menu-item-desc">
+                    Equal parts espresso, steamed milk, and velvety foam.
+                  </p>
+                </li>
+                <li class="menu-item">
+                  <div class="menu-item-head">
+                    <span class="menu-item-name">Latte</span>
+                    <span class="menu-item-price">$5.00</span>
+                  </div>
+                  <p class="menu-item-desc">
+                    Smooth espresso with silky steamed milk.
+                  </p>
+                  <p class="menu-item-options">
+                    <strong>Milk options:</strong> oat, almond, whole milk
+                  </p>
+                </li>
+                <li class="menu-item">
+                  <div class="menu-item-head">
+                    <span class="menu-item-name">Flat White</span>
+                    <span class="menu-item-price">$4.75</span>
+                  </div>
+                  <p class="menu-item-desc">
+                    Ristretto shots with microfoam milk for an intense, creamy
+                    finish.
+                  </p>
+                </li>
+                <li class="menu-item">
+                  <div class="menu-item-head">
+                    <span class="menu-item-name">Filter Coffee</span>
+                    <span class="menu-item-price">$2.50</span>
+                  </div>
+                  <p class="menu-item-desc">
+                    Single-origin, slow-brewed daily. Ask your barista for
+                    today's origin.
+                  </p>
+                </li>
+              </ul>
+            </article>
+
+            <article class="menu-section" aria-labelledby="cold-drinks-heading">
+              <h3 id="cold-drinks-heading" class="menu-section-title">
+                Cold Drinks
+              </h3>
+              <ul class="menu-list">
+                <li class="menu-item">
+                  <div class="menu-item-head">
+                    <span class="menu-item-name">Iced Latte</span>
+                    <span class="menu-item-price">$5.50</span>
+                  </div>
+                  <p class="menu-item-desc">
+                    Espresso over ice with your choice of milk.
+                  </p>
+                  <p class="menu-item-options">
+                    <strong>Milk options:</strong> oat, almond, whole milk
+                  </p>
+                </li>
+                <li class="menu-item">
+                  <div class="menu-item-head">
+                    <span class="menu-item-name">Cold Brew</span>
+                    <span class="menu-item-price">$5.00</span>
+                  </div>
+                  <p class="menu-item-desc">
+                    Steeped for 18 hours. Smooth, low-acid, and naturally
+                    sweet.
+                  </p>
+                </li>
+                <li class="menu-item">
+                  <div class="menu-item-head">
+                    <span class="menu-item-name">Iced Matcha Latte</span>
+                    <span class="menu-item-price">$5.50</span>
+                  </div>
+                  <p class="menu-item-desc">
+                    Ceremonial-grade matcha with oat milk and a touch of
+                    honey.
+                  </p>
+                </li>
+                <li class="menu-item">
+                  <div class="menu-item-head">
+                    <span class="menu-item-name">Sparkling Lemonade</span>
+                    <span class="menu-item-price">$4.00</span>
+                  </div>
+                  <p class="menu-item-desc">
+                    House-made with fresh lemons and cane sugar.
+                  </p>
+                </li>
+              </ul>
+            </article>
+
+            <article class="menu-section" aria-labelledby="food-heading">
+              <h3 id="food-heading" class="menu-section-title">
+                Food &amp; Pastries
+              </h3>
+              <ul class="menu-list">
+                <li class="menu-item">
+                  <div class="menu-item-head">
+                    <span class="menu-item-name">Butter Croissant</span>
+                    <span class="menu-item-price">$3.50</span>
+                  </div>
+                  <p class="menu-item-desc">
+                    Baked fresh every morning. Flaky, golden, perfect.
+                  </p>
+                </li>
+                <li class="menu-item">
+                  <div class="menu-item-head">
+                    <span class="menu-item-name">Banana Bread</span>
+                    <span class="menu-item-price">$4.00</span>
+                  </div>
+                  <p class="menu-item-desc">
+                    Made with overripe bananas and a hint of cinnamon.
+                  </p>
+                </li>
+                <li class="menu-item">
+                  <div class="menu-item-head">
+                    <span class="menu-item-name">Avocado Toast</span>
+                    <span class="menu-item-price">$8.50</span>
+                  </div>
+                  <p class="menu-item-desc">
+                    Sourdough, smashed avo, chili flakes, and a poached egg.
+                  </p>
+                </li>
+                <li class="menu-item">
+                  <div class="menu-item-head">
+                    <span class="menu-item-name">Seasonal Muffin</span>
+                    <span class="menu-item-price">$3.75</span>
+                  </div>
+                  <p class="menu-item-desc">
+                    Ask us what's in today's batch.
+                  </p>
+                </li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="loyalty" class="loyalty" aria-labelledby="loyalty-heading">
+        <div class="container">
+          <header class="section-header">
+            <h2 id="loyalty-heading">Loyalty &amp; Ordering</h2>
+            <p>Rewards for regulars and easy ways to skip the queue.</p>
+          </header>
+
+          <div class="loyalty-grid">
+            <article class="loyalty-card" aria-labelledby="loyalty-card-heading">
+              <h3 id="loyalty-card-heading">Loyalty Card</h3>
+              <p>
+                Buy <strong>9 coffees</strong>, get your
+                <strong>10th free</strong>. Pick up a card at the counter on
+                your next visit — we'll stamp it for you.
+              </p>
+            </article>
+
+            <article class="loyalty-card" aria-labelledby="preorder-heading">
+              <h3 id="preorder-heading">Pre-Order via App</h3>
+              <p>
+                Order ahead and skip the queue. The Brew &amp; Bliss app is
+                available on iOS and Android.
+              </p>
+              <ul class="app-links">
+                <li>
+                  <a
+                    class="app-link"
+                    href="https://apps.apple.com/app/brew-and-bliss"
+                    rel="noopener"
+                    aria-label="Download on the App Store (iOS)"
+                  >
+                    Download for iOS
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="app-link"
+                    href="https://play.google.com/store/apps/details?id=com.brewandbliss"
+                    rel="noopener"
+                    aria-label="Get it on Google Play (Android)"
+                  >
+                    Get it on Android
+                  </a>
+                </li>
+              </ul>
+            </article>
+
+            <article class="loyalty-card" aria-labelledby="group-heading">
+              <h3 id="group-heading">Group &amp; Catering Orders</h3>
+              <p>
+                Catering for parties of <strong>10+</strong>. Drop us a line
+                and we'll plan a menu that fits.
+              </p>
+              <p>
+                <a
+                  class="contact-link"
+                  href="mailto:hello@brewandbliss.com?subject=Catering%20enquiry"
+                  >hello@brewandbliss.com</a
+                >
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="find-us" class="find-us" aria-labelledby="find-us-heading">
+        <div class="container">
+          <header class="section-header">
+            <h2 id="find-us-heading">Find Us</h2>
+            <p>Drop in, give us a ring, or say hello online.</p>
+          </header>
+
+          <div class="find-us-grid">
+            <article aria-labelledby="address-heading">
+              <h3 id="address-heading">Address</h3>
+              <p>
+                <a
+                  class="map-link"
+                  href="https://www.google.com/maps/search/?api=1&query=42+Maple+Street+Downtown+District"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  42 Maple Street, Downtown District
+                </a>
+              </p>
+            </article>
+
+            <article aria-labelledby="hours-heading">
+              <h3 id="hours-heading">Opening Hours</h3>
+              <ul class="hours-list">
+                <li><span>Mon&ndash;Fri</span><span>7 am&ndash;6 pm</span></li>
+                <li><span>Sat&ndash;Sun</span><span>8 am&ndash;5 pm</span></li>
+              </ul>
+            </article>
+
+            <article aria-labelledby="contact-heading">
+              <h3 id="contact-heading">Contact</h3>
+              <ul class="contact-list">
+                <li>
+                  <span class="label">Phone</span>
+                  <a href="tel:+15550123456">(555) 012-3456</a>
+                </li>
+                <li>
+                  <span class="label">Website</span>
+                  <a
+                    href="http://www.brewandbliss.com"
+                    target="_blank"
+                    rel="noopener"
+                    >www.brewandbliss.com</a
+                  >
+                </li>
+                <li>
+                  <span class="label">Instagram</span>
+                  <a
+                    href="https://www.instagram.com/brewandbliss"
+                    target="_blank"
+                    rel="noopener"
+                    >@brewandbliss</a
+                  >
+                </li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p class="footer-note">
+          All items subject to seasonal availability. Allergen info available
+          on request. We support compostable packaging.
+        </p>
+        <p class="footer-copy">
+          &copy; <span id="year">2026</span> Brew &amp; Bliss Coffee Shop.
+        </p>
+      </div>
+    </footer>
+
+    <script src="featured.js"></script>
+    <script>
+      // Keep the footer year in sync.
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
